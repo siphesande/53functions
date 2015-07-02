@@ -5,7 +5,6 @@ TestMyCode.run("testing hello function", function(assert) {
     assert.equals("hello world", result, "testing hello function");
 });
 
-//testing hello_uppercase function
 TestMyCode.run("testing hello_uppercase function", function(assert) {
     var result = hello_uppercase("sphe");
     // is the result as we expected?

@@ -1,7 +1,27 @@
-function number_list(n) {
+/*
+var list =[];
+	var hello_list = function(number) {
+		
+for (var count=1;count<=number;count++)
+
+         {
+			console.log("hello world");
+		       
+		     list.push("hello world");
+		 }
+		 return list;
+	}*/
+
+var count = 1;
+var list =[];
+	var hello_list = function(number) {
+		while(count <= number) 
 
 
-for (var counter = 1; counter< 5 ; counter++) {
-	console.log(counter);
-  }
-}
+		{
+			console.log("hello world");
+		       count++;
+		       list.push("hello world");
+		 }
+		 return list;
+	}
