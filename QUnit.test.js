@@ -31,7 +31,7 @@ QUnit.test( "sum_numbers", function( assert ) {
 
 QUnit.test( "length test", function( assert ) {
   
-  assert.equal(length(), 4 );
+  assert.equal(length("sphe"), 4 );
 });
 
 QUnit.test( "upper test", function( assert ) {

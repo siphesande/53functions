@@ -1,3 +1,3 @@
 function length(sphe) {
-	return("sphe".length);
+	return(sphe.length);
 }
