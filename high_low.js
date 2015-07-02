@@ -12,20 +12,11 @@
 
 
 
-var arr = [100, 0, 50];
-var list=[];
-function high_low() {
-arr.min(); // return 0
-arr.max(); 
-
-
-
-
-
-
-
-
-
+//var arr = [100, 0, 50];
+//var list=[];
+//function high_low() {
+//arr.min(); // return 0
+//arr.max(); 
 
 
 
