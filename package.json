@@ -16,7 +16,8 @@
     "url": "https://github.com/siphesande/53functions/issues"
   },
   "dependencies": {
-    "gulp-qunit": "~1.2.1"
+    "gulp-qunit": "~1.2.1",
+    "gulp": "~3.9.0"
   },
   "devDependencies": {}
 }
