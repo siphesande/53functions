@@ -1,3 +1,3 @@
-function upper(sphe) {
-	return(sphe.toUpperCase());
+function upper(name) {
+	return(name.toUpperCase());
 }
