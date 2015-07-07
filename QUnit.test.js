@@ -40,7 +40,7 @@ QUnit.test( "upper test", function( assert ) {
 });
 
 QUnit.test( "reverse test", function( assert ) {
-  ;
+  
   assert.equal(reverse("sphe").toString(), "ehps" );
 });
 
@@ -50,4 +50,37 @@ QUnit.test( "hello_list test", function( assert ) {
 });
 
 
-   
+QUnit.test("high_low test", function(assert){ 
+
+assert.equal(high_low([1,3,2,7,4]),[7,1].toString());
+
+
+});
+
+
+QUnit.test("count_words test" , function(assert){
+
+assert.equal(count_words("code now") ,2);
+});
+QUnit.test("sum_word_len test" , function(assert){
+
+    
+  assert.equal(sum_word_len("code now sphe") ,11);  
+});
+
+//QUnit.test("longest_word test" ,function(assert){
+    //var result = longest_word("how cool is coding");
+    //var expected = ["coding",6].toString();
+    //assert.equal(result,expected);
+
+
+
+QUnit.test("longest_word test" , function(assert){
+assert.equal(longest_word("how cool is coding") ,["coding",6].toString());  
+});
+
+
+
+QUnit.test("shortest_word test" , function(assert){
+assert.equal(shortest_word("Coding with Andre") ,["with",4].toString());  
+});
