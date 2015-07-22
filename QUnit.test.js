@@ -84,3 +84,18 @@ assert.equal(longest_word("how cool is coding") ,["coding",6].toString());
 QUnit.test("shortest_word test" , function(assert){
 assert.equal(shortest_word("Coding with Andre") ,["with",4].toString());  
 });
+
+QUnit.test("word_length test",function(assert){
+
+   var result = word_length("codex is really helpfull");
+            var expected = [6,5];
+
+        assert.equal(result.toString() , expected.toString());
+});
+QUnit.test("avg test",function(assert){
+
+   var result = avg("codex is really helpfull");
+            var expected = [6];
+
+        assert.equal(result.toString() , expected.toString());
+});
