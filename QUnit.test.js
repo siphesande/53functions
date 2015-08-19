@@ -99,3 +99,8 @@ QUnit.test("avg test",function(assert){
 
         assert.equal(result.toString() , expected.toString());
 });
+QUnit.test("start test",function(assert){
+             var result  = start("Codex time tab me me me time time me me");
+             var expected = 'm';
+              assert.equal(result ,expected);
+});
