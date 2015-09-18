@@ -104,3 +104,19 @@ QUnit.test("start test",function(assert){
              var expected = 'm';
               assert.equal(result ,expected);
 });
+QUnit.test("lowercase_letters test" , function(assert){
+
+assert.equal(lowercase_letters("Jack Sprats") ,"ack prats"); 
+
+});
+QUnit.test("uppercase_letters test" , function(assert){
+
+assert.equal(uppercase_letters("Jack Sprats") ,"J S"); 
+
+});
+
+QUnit.test("square_stars test" , function(assert){
+
+assert.equal(square_stars("Jack Sprats") ,"J S"); 
+
+});
