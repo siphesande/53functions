@@ -120,3 +120,29 @@ QUnit.test("square_stars test" , function(assert){
 assert.equal(square_stars("Jack Sprats") ,"J S"); 
 
 });
+
+QUnit.test("returns most occuring letter in sentence",function(assert){
+      
+      var result = most("sphe is a ok");
+      var expected = 's';
+      assert.equal(result,expected);
+});
+
+QUnit.test("returns least occuring letter in sentence",function(assert){
+      
+      var result  = least("wonder full day").toLowerCase();
+            var expected = 'w';
+            assert.equal(result ,expected);
+});
+QUnit.test("add.js test",function(assert){
+  assert.equal(add(2,3), 5);
+
+});
+
+QUnit.test("divide test" ,function(assert){
+  assert.equal(div(2,2),1);
+});
+
+QUnit.test("cal_all test" ,function(assert){
+  assert.equal(calc_all(2,2,2,4),1);
+});
