@@ -100,8 +100,8 @@ QUnit.test("avg test",function(assert){
         assert.equal(result.toString() , expected.toString());
 });
 QUnit.test("start test",function(assert){
-             var result  = start("Codex time tab me me me time time me me");
-             var expected = 'm';
+             var result  = start("Codex time tcab ");
+             var expected = 't';
               assert.equal(result ,expected);
 });
 QUnit.test("lowercase_letters test" , function(assert){
@@ -143,6 +143,11 @@ QUnit.test("divide test" ,function(assert){
   assert.equal(div(2,2),1);
 });
 
-QUnit.test("cal_all test" ,function(assert){
-  assert.equal(calc_all(2,2,2,4),1);
+QUnit.test("calc_all test",function(assert){
+  
+   assert.equal(calc_all(2,2,4,5),1);
+});
+
+QUnit.test("draw.js test", function(assert){
+  assert.equal(draw(['waist','internship','music']),['waist','internship','music']);
 });

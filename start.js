@@ -3,7 +3,7 @@ var most = function(arr){
      var count =0;
      var letters =[];//non-duplicated word starting 'letters' array
      var occurances =[]//number of occurances of each letter in 'letters' array
-    for( var i = 0 ;i< arr.length;i++){//loop through array
+     for( var i = 0 ;i< arr.length;i++){//loop through array
 
                 
                 var letter = arr[i];//each letter                
@@ -32,8 +32,6 @@ var most = function(arr){
                     }
                 }
                 else{}
-
-                
 
         } 
     
