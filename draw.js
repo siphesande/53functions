@@ -1,6 +1,6 @@
 
-var draw = function(A,B,C){
-	console.log(A,B,C);
-	
-	return[A,B,C]; 
+var draw = function(array){
+	console.log(array);
+
+	return [array]; 
 }

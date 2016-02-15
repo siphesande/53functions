@@ -149,5 +149,6 @@ QUnit.test("calc_all test",function(assert){
 });
 
 QUnit.test("draw.js test", function(assert){
-  assert.equal(draw(['waist','internship','music']),['waist','internship','music']);
+  
+  assert.equal(draw(['waist','internship','music']),'waist,internship,music');
 });
