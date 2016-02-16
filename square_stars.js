@@ -1,9 +1,19 @@
-function draw() {
-  var canvas = document.getElementById('canvas');
-  if (canvas.getContext) {
-    var ctx = canvas.getContext('2d');
+var rectOuter = function(length, width) {
 
-  return ctx.fillRect(25,25,100,100);
-    
-  }
+    var printStr = "*";
+    var seprator = " ";
+
+    for (var i = 0; i < length; i++) {
+
+        for (var j = 0; j < width; j++){
+
+            if (i == 0 || j == 0 || i == length - 1 || j == width - 1){
+                console.log(printStr + seprator);
+            }
+            else{
+                console.log(seprator + seprator);
+            }
+
+        console.log();
+    }
 }
