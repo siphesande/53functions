@@ -32,18 +32,34 @@
 //     for j in range(n):
 //         console.log('*' if i in [0, n-1] or j in [0, m-1] else ' ', end='')
 //     console.log()
+var  height = 4;
+var row = 0;
+while (row < height){
+    var count = 0;
+    while(count < height -row){
+        console.log(" ");
+        count++;
+    }
+    count = 0;
+    while(count <2*row + 1){
+        console.log("*");
+        count++;
+    }
+    console.log("\n");
+    row++;
+}
 
- var draw = function(length){
-                var top = Array(length+1).join("* ");
-                var bottom = Array(length+1).join("* ");
-                var middle=Array(length-1).join("*"+(Array(length*2-2).join(" "))+"*\n")
+//  var draw = function(length){
+//                 var top = Array(length+1).join("* ");
+//                 var bottom = Array(length+1).join("* ");
+//                 var middle=Array(length-1).join("*"+(Array(length*2-2).join(" "))+"*\n")
 
-                middle = middle.substring(0,middle.length-1)
+//                 middle = middle.substring(0,middle.length-1)
                
-                console.log(top);
-                console.log(middle);
-                console.log(bottom);
+//                 console.log(top);
+//                 console.log(middle);
+//                 console.log(bottom);
 
-                return[top,middle,bottom];
-        }
-console.log(draw(3));
+//                 return[top,middle,bottom];
+//         }
+// console.log(draw(3));
