@@ -18,16 +18,32 @@
 //     }
 // }
 
-var size = 5
-var inner_size = size - 2
-console.log ('*' * size)
-for(var i = 0; i < inner_size; i++){
-    console.log ('*' + ' ' * inner_size + '*');
-    }
-console.log ('*' * size);
+// var size = 5
+// var inner_size = size - 2
+// console.log ('*' * size)
+// for(var i = 0; i = inner_size; i++){
+//     console.log ('*' + ' ' * inner_size + '*');
+//     }
+// console.log ('*' * size);
 
-// m, n = 10, 10
+// var m = 10,
+// var n = 10,
 // for i in range(m):
 //     for j in range(n):
-//         print('*' if i in [0, n-1] or j in [0, m-1] else ' ', end='')
-//     print()
+//         console.log('*' if i in [0, n-1] or j in [0, m-1] else ' ', end='')
+//     console.log()
+
+ var draw = function(length){
+                var top = Array(length+1).join("* ");
+                var bottom = Array(length+1).join("* ");
+                var middle=Array(length-1).join("*"+(Array(length*2-2).join(" "))+"*\n")
+
+                middle = middle.substring(0,middle.length-1)
+               
+                console.log(top);
+                console.log(middle);
+                console.log(bottom);
+
+                return[top,middle,bottom];
+        }
+console.log(draw(3));
