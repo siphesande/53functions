@@ -115,11 +115,11 @@ assert.equal(uppercase_letters("Jack Sprats") ,"J S");
 
 });
 
-QUnit.test("square_stars test" , function(assert){
+// QUnit.test("square_stars test" , function(assert){
 
-assert.equal(square_stars("Jack Sprats") ,"J S"); 
+// assert.equal(square_stars("Jack Sprats") ,"J S"); 
 
-});
+// });
 
 QUnit.test("returns most occuring letter in sentence",function(assert){
       
@@ -152,3 +152,15 @@ QUnit.test("draw.js test", function(assert){
   
   assert.equal(draw(['waist','internship','music']),'waist,internship,music');
 });
+QUnit.test('square_stars', function(assert) {
+    assert.equal(square_stars(4),'****\n****\n****\n****\n');
+});
+QUnit.test('square.js', function(assert){
+    assert.equal(square("@"), "@@@@\n@@@@\n@@@@\n@@@@\n");
+
+});
+QUnit.test("square_param.js", function(assert){
+    assert.equal(square_param("#","4","4"), '####\n####\n####\n####\n');
+});
+
+
