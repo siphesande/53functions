@@ -1,12 +1,27 @@
-var square_stars =function (value){
-  var string = '';
-  for(width=1; width<=value; width++){
-   
-    for(height=1; height<=value; height++){
-     
-      string += '*';
+var tri = function(base){
+
+var string = "";
+
+for (var i = 0, j = base, k = base; i < 10; i++) {
+    string += "*";
+    if (--j === 0) {
+        j = --k;
+        string += "\n";
+    }
+}
+
+return (string);
+}
+ // Use this methode
+function tri_two(number){
+  var str = '';
+  var count = 0;
+  for(x=0; x <= number; x++){
+    for(y=0; y<count; y++){
+        str += '*';
     };
-    string += '\n';
+    count++;
+    str += '\n';
   };
-  return string;
+  return str;
 };

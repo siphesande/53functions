@@ -163,4 +163,10 @@ QUnit.test("square_param.js", function(assert){
     assert.equal(square_param("#","4","4"), '####\n####\n####\n####\n');
 });
 
+QUnit.test("tri.js", function(assert){
+    assert.equal(tri(4),'****\n***\n**\n*\n');
+});
 
+QUnit.test("tri.js", function(assert){
+    assert.equal(tri_two(4),'\n*\n**\n***\n****\n');
+});
