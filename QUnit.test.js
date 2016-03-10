@@ -170,3 +170,13 @@ QUnit.test("tri.js", function(assert){
 QUnit.test("tri.js", function(assert){
     assert.equal(tri_two(4),'\n*\n**\n***\n****\n');
 });
+
+QUnit.test("tri_char.js", function(assert){
+    assert.equal(tri_char("@"), "\n@\n@@\n@@@\n@@@@\n");
+});
+QUnit.test("square_param.js", function(assert){
+    assert.equal(square_param_base("#","4"),"####\n####\n####\n####\n");
+});
+QUnit.test("diamond.js", function(assert){
+    assert.equal(diamond(5),"\n    *\n   * *\n  * * * \n * * * *\n* * * * *\n * * * * \n  * * *  \n   * *   \n    *    \n");
+});
