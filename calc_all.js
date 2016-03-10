@@ -1,5 +1,3 @@
-
-
-function calc_all(n,m,4,5){
-	 return (n/m) + (4*4) - 5;
+function calc_all(m,n){
+	 return(m+n*3-3);
 }

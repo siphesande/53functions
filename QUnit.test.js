@@ -115,11 +115,11 @@ assert.equal(uppercase_letters("Jack Sprats") ,"J S");
 
 });
 
-// QUnit.test("square_stars test" , function(assert){
+QUnit.test("square_stars test" , function(assert){
 
-// assert.equal(square_stars("Jack Sprats") ,"J S"); 
+assert.equal(square_stars("Jack Sprats") ,"J S"); 
 
-// });
+});
 
 QUnit.test("returns most occuring letter in sentence",function(assert){
       
@@ -143,10 +143,7 @@ QUnit.test("divide test" ,function(assert){
   assert.equal(div(2,2),1);
 });
 
-QUnit.test("calc_all test",function(assert){
-  
-   assert.equal(calc_all(2,2,4,5),1);
-});
+
 
 QUnit.test("draw.js test", function(assert){
   
@@ -178,5 +175,22 @@ QUnit.test("square_param.js", function(assert){
     assert.equal(square_param_base("#","4"),"####\n####\n####\n####\n");
 });
 QUnit.test("diamond.js", function(assert){
-    assert.equal(diamond(5),"\n    *\n   * *\n  * * * \n * * * *\n* * * * *\n * * * * \n  * * *  \n   * *   \n    *    \n");
+    assert.equal(diamond(5),"\n    * \n   * * \n  * * * \n * * * * \n* * * * * \n * * * * \n  * * * \n   * * \n    * \n");
 });
+
+QUnit.test("diamond_base.js", function(assert){
+    assert.equal(diamond_base("*"),"\n    * \n   * * \n  * * * \n * * * * \n* * * * * \n * * * * \n  * * * \n   * * \n    * \n");
+});
+
+QUnit.test("diamond_base.js", function(assert){
+    assert.equal(diamond_base("*"),"\n    * \n   * * \n  * * * \n * * * * \n* * * * * \n * * * * \n  * * * \n   * * \n    * \n");
+});
+QUnit.test("diamond_char_base.js", function(assert){
+    assert.equal(diamond_char_base("*",5),"\n    * \n   * * \n  * * * \n * * * * \n* * * * * \n * * * * \n  * * * \n   * * \n    * \n");
+});
+QUnit.test("calc_all test", function(assert){
+     assert.equal(calc_all(1,2),4);
+     //assert.equal(calc_all(2,2,4,5),1);
+});
+
+

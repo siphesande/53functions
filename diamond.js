@@ -3,7 +3,7 @@ function diamond( n )
    // n = parseInt(n,10);
 
     var i, s;
-    var string ='';
+    var string ='\n';
     // top: 1 to n
    
     for(i = 1; i <= n; ++i )
@@ -36,13 +36,14 @@ function diamond( n )
         }
        string += "\n";
     }
+
    console.log(string);
    return string;
     
 }
 
 
-//diamond(5);
+diamond(5);
 
 
 
