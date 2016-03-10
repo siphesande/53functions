@@ -190,7 +190,10 @@ QUnit.test("diamond_char_base.js", function(assert){
 });
 QUnit.test("calc_all test", function(assert){
      assert.equal(calc_all(1,2),4);
-     //assert.equal(calc_all(2,2,4,5),1);
+    
+});
+QUnit.test("calc_chain test", function(assert){
+    assert.equal(calc_chain(),5);
 });
 
 
