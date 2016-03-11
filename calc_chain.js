@@ -76,7 +76,7 @@ return new Calc().add(1).add(2).multiply(3).subtract(4).divide(7).calce_chain();
 
 
 // 	console.log(subtract(multiply(add(one, two), three), four));
-// 	return subtract(multiply(add(one, two), three), four);
+// 	calc_chain = subtract(multiply(add(one, two), three), four);
 // }
 
 // but it's still a function right now, so evaluate it
