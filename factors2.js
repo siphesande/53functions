@@ -12,7 +12,7 @@ var factors2 = function(n){
   return list;
 };
 
-//factors2(10);
+factors2(10);
 
 
 
@@ -52,4 +52,4 @@ var factors2 = function(n){
 
 // calculate(2);
 
-//  
+ 

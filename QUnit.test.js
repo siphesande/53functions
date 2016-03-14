@@ -200,6 +200,15 @@ QUnit.test("factors2.js", function(assert){
 });
 QUnit.test("faction2_or_7 test", function(assert){
   assert.equal(factors2_or_7(15),[0,2,4,6,7,8,10,12,14].toString());
-})
+});
+QUnit.test("faction2_and_7 test", function(assert){
+  assert.equal(factors2_and_7(15),[0,14].toString());
+});
+QUnit.test("factorial test",function(assert){
+  assert.equal(factorial(4),"0,1,2,4");
+});
+QUnit.test("fibonacci function test", function(assert){
+  assert.equal(fibonacci(6),[0,1,1,2,3,5].toString());
+});
 
 
