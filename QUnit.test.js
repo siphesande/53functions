@@ -195,5 +195,11 @@ QUnit.test("calc_all test", function(assert){
 QUnit.test("calc_chain test", function(assert){
     assert.equal(calc_chain(),5);
 });
+QUnit.test("factors2.js", function(assert){
+   assert.equal(factors2(10),[0,2,4,6,8].toString());
+});
+QUnit.test("faction2_or_7 test", function(assert){
+  assert.equal(factors2_or_7(15),[0,2,4,6,7,8,10,12,14].toString());
+})
 
 
