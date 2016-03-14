@@ -210,5 +210,11 @@ QUnit.test("factorial test",function(assert){
 QUnit.test("fibonacci function test", function(assert){
   assert.equal(fibonacci(6),[0,1,1,2,3,5].toString());
 });
+QUnit.test("ascii_upper test",function(assert){
+  assert.equal(ascii_upper(),50);
+});
+QUnit.test("ascii_params",function(assert){
+  assert.equal(ascii_params('Sphe'),48);
+});
 
 
