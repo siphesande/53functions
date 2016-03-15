@@ -115,11 +115,11 @@ assert.equal(uppercase_letters("Jack Sprats") ,"J S");
 
 });
 
-QUnit.test("square_stars test" , function(assert){
+// QUnit.test("square_stars test" , function(assert){
 
-assert.equal(square_stars("Jack Sprats") ,"J S"); 
+// assert.equal(square_stars("Jack Sprats") ,"J S"); 
 
-});
+// });
 
 QUnit.test("returns most occuring letter in sentence",function(assert){
       
@@ -216,5 +216,8 @@ QUnit.test("ascii_upper test",function(assert){
 QUnit.test("ascii_params",function(assert){
   assert.equal(ascii_params('Sphe'),48);
 });
+QUnit.test("mondays test", function(assert){
+  assert.equal(mondays(2009),52);
+})
 
 
