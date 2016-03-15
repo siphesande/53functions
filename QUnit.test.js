@@ -218,6 +218,9 @@ QUnit.test("ascii_params",function(assert){
 });
 QUnit.test("mondays test", function(assert){
   assert.equal(mondays(2009),52);
-})
+});
+QUnit.test("anyday  test", function(assert){
+   assert.equal(anyday(),);
+});
 
 
