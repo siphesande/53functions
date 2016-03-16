@@ -1,13 +1,25 @@
-function anyday(year, week) {
-    var j10 = new Date(),
-        j4 = new Date(year, 0, 4, 12, 0, 0),
-        mon = j4.getTime() - j10.getDay() * 86400000,
-        result = [];
+function anyday(year, wednesday) {
 
-    for (var i = -1; i < 6; i++) {
-        result.push(new Date(mon + ((week - 1) * 7 + i) * 86400000));
-    }
-  //console.log(result.length); 
-  return result;
+  var date = new Date(year, 0, 1);
+  while (date.getDay() !== 1) {
+    date.setDate(date.getDate() + 1);
+  }
+ 
+  var days = [];
+  while (date.getFullYear() == year) {
+    var m = date.getMonth() + 1;
+    var d = date.getDate();
+    days.push(
+      year + '-' +
+      (m < 10 ? 'wednesday' + m : m) + '-' +
+      (d < 10 ? 'wednesday' + d : d)
+    );
+    date.setDate(date.getDate() + 7);
+   
+  }
+  console.log(days.length);
+
+  return days.length;
 }
-anyday(2015,3);
+
+

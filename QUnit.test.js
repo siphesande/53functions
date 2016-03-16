@@ -220,7 +220,8 @@ QUnit.test("mondays test", function(assert){
   assert.equal(mondays(2009),52);
 });
 QUnit.test("anyday  test", function(assert){
-   assert.equal(anyday(),);
+    assert.deepEqual(mondays(2013,3),52);
 });
+
 
 
