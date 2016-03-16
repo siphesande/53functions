@@ -222,6 +222,9 @@ QUnit.test("mondays test", function(assert){
 QUnit.test("anyday  test", function(assert){
     assert.deepEqual(mondays(2013,3),52);
 });
+QUnit.test("dice_roll test", function(assert){
+    assert.equal(rollDice(2, 12),8);
+});
 
 
 
